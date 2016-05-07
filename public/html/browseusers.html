@@ -1,0 +1,15 @@
+<h1>Browse Users</h1>
+
+<div >
+    <div class="row">
+        <div class="col s12 m3" ng-repeat = 'user in apiData.data'>
+            <div class="card" ui-sref='users/profiles/({id:user._id})'>
+                <div class="card-image">
+                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAXNAAAAJGFmMWU5OWQ2LWQwNjYtNGY2YS1iZWVmLTJjMTM3ZGI1NDBiMA.jpg">
+                    <span class="card-title activator">{{user.username}}</span>
+                </div>
+
+            </div>
+        </div>
+ </div>
+</div>
